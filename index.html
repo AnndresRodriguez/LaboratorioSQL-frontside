@@ -14,7 +14,9 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=K2D|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -54,30 +56,57 @@
       <div class="data-first-section">
         <h3>Laboratorio SQL</h3>
         <p class="first-section-data">Ingresa al Sistema para poder hacer uso del laboratorio SQL</p>
-        <img src="img/laboratorio.jpg" alt="">
+        <img src="img/bd.jpg" alt="laboratorio-img">
       </div>
 
       <div class="data-first-login">
         <h3>Laboratorio de Usuarios</h3>
-          <form>
-          <div class="form-group">
-            
-            <label for="exampleInputEmail1">Usuario</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          </div>
       
-          <div class="form-group">
-            <label for="exampleInputPassword1">Clave</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <div class="panel panel-default container-login">
+          <div class="panel-heading panel-heading-content">
+            <strong class="panel-heading-title">Inicie Sesión Para Continuar</strong>
           </div>
-  
-          <button type="submit" class="btn btn-default">Ingresar</button>
-        </form>
+          <div class="panel-body">
+            <form role="form" action="#" method="POST">
+              <fieldset>
+                
+                  <div class="center-block">
+                    <img class="profile-img"
+                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+                  </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-user"></i>
+                        </span> 
+                        <input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                        <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                      </div>
+                  <div class="form-group container-button-login">
+                      <input type="submit" class="btn btn-success btn-iniciar-sesion" value="Iniciar Sesión">
+                    </div>
+                  </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="panel-footer">
+           <p> ¿No tienes Cuenta? Regístrate <a href="#" onClick="" > Crear Nueva Cuenta </a> </p>
+          </div>
+      </div>
+     
       </div>
 
+</div>
    
 
-    </div>
+    
 
 
     <div class="content-second-section">
@@ -90,47 +119,58 @@
         </div>
 
         <div class="content-second-panels">
-          
-          <div class="panel">
-           <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
-           <div class="course-description">  
-           <p>Ejemplo de uso de las sentencias de creacion de tablas</p>
-           </div>
 
-           
-           <div class="circle-read-more">
-            <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más"></i>
+          <div class="content-group-courses">
+            
+              <div class="panel-course">
+               <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
+               <div class="course-description">  
+               <p>Ejemplo de uso de las sentencias de creacion de tablas</p>
+               </div>
+               <div class="circle-read-more">
+                <!-- <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más"></i> -->
+                <a href="#" class="btn btn-primary">Ir al Curso</a>
+              </div>
+             </div>
+
+              <div class="panel-course">
+               <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
+              <div class="course-description">
+               <p>Ejemplo de uso de las sentencia de inserción de datos en la base de</p>
+               </div>
+               <div class="circle-read-more">
+                <!-- <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más"></i> -->
+                <a href="#" class="btn btn-primary">Ir al Curso</a>
+               </div>
+             </div>
+
           </div>
-         </div>
+          
+          <div class="content-group-courses">
+  
+              <div class="panel-course">
+               <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
+              <div class="course-description">
+               <p>Ejemplo de uso de las consultas anidadas con la sentencia IN</p>
+               </div>
+               <div class="circle-read-more"> 
+                <!-- <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más" data-size="large"></i>  -->
+                <a href="#" class="btn btn-primary">Ir al Curso</a>
+               </div>
+             </div>
 
-          <div class="panel">
-           <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
-          <div class="course-description">
-           <p>Ejemplo de uso de las sentencia de inserción de datos en la base de</p>
-           </div>
-           <div class="circle-read-more">
-            <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más"></i>
-           </div>
-         </div>
-
-          <div class="panel">
-           <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
-          <div class="course-description">
-           <p>Ejemplo de uso de las consultas anidadas con la sentencia IN</p>
-           </div>
-           <div class="circle-read-more"> <i class="fa fa-plus-circle fa-2x btn-ver-mas" aria-hidden="true" data-tippy="Ver más" data-size="large"></i> 
-           </div>
-         </div>
-
-          <div class="panel">
-           <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
-          <div class="course-description">
-           <p>Ejemplo de uso de las sentencias de DML en la base de datos mysql</p>
-           </div>
-           <div class="circle-read-more btn-ver-mas"><i class="fa fa-plus-circle fa-2x " aria-hidden="true" data-tippy="Ver más"></i></div>
-         </div>
-         
-
+              <div class="panel-course">
+               <img src="img/lines-of-code.jpg" alt="code" class="img-panel">
+              <div class="course-description">
+               <p>Ejemplo de uso de las sentencias de DML en la base de datos mysql</p>
+               </div>
+               <div class="circle-read-more btn-ver-mas">
+                <!-- <i class="fa fa-plus-circle fa-2x " aria-hidden="true" data-tippy="Ver más"></i> -->
+                <a href="#" class="btn btn-primary">Ir al Curso</a>
+              </div>
+             </div>
+             
+          </div>
 
           
         </div>
